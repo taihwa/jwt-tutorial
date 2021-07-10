@@ -1,0 +1,16 @@
+# 데이터베이스 설정
+spring:
+  datasource:
+    url: jdbc:mariadb://211.216.72.162:3316/spring
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: spring
+    password: spring
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+
+logging:
+  level:
+    com.taihwa: DEBUG
