@@ -6,11 +6,13 @@ import com.taihwa.tutorial.entity.User;
 import com.taihwa.tutorial.repository.UserRepository;
 import com.taihwa.tutorial.util.SecurityUtil;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Collections;
 import java.util.Optional;
 
+@Service
 public class UserService {
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
